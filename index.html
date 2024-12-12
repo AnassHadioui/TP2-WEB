@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Exercises</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Carousel -->
+  <section class="carousel-section">
+    <h1>Image Carousel</h1>
+    <div class="carousel">
+      <button id="prev">Previous</button>
+      <div class="images">
+        <img src="html.png" alt="Image 1">
+        <img src="css.png" alt="Image 2">
+        <img src="js.png" alt="Image 3">
+      </div>
+      <button id="next">Next</button>
+    </div>
+  </section>
+
+  <!-- Dropdown Menu -->
+  <section class="menu-section">
+    <h1>Dropdown Menu</h1>
+    <div class="menu-container">
+      <div id="menu-title">Menu</div>
+      <ul id="menu" class="menu">
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- To-Do List -->
+  <section class="todo-section">
+    <h1>To-Do List</h1>
+    <div class="todo-container">
+      <input type="text" id="taskInput" placeholder="Add a task">
+      <button id="addTaskButton">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+  </section>
+
+  <!-- Modal -->
+  <section class="modal-section">
+    <h1>Modal Notification</h1>
+    <button id="openModal">Open Modal</button>
+    <div id="modalContainer" class="modal hidden">
+      <div class="modal-content">
+        <p>This is a modal notification.</p>
+        <button id="closeModal">Close</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Table -->
+  <section class="filter-section">
+    <h1>Filter Table</h1>
+    <input type="text" id="filterInput" placeholder="Search for a product...">
+    <ul id="productList">
+      <li>Laptop</li>
+      <li>Smartphone</li>
+      <li>Headphones</li>
+      <li>Monitor</li>
+      <li>Keyboard</li>
+      <li>Mouse</li>
+    </ul>
+  </section>
+
+  <!-- Responsive Layout -->
+  <section id="responsiveLayout">
+    <h1>Responsive Layout</h1>
+    Resize your browser to see the effect.
+  </section>
+
+  <!-- Progress Bar -->
+  <section class="progress-section">
+    <h1>Progress Bar</h1>
+    <button id="startProgress">Start Progress</button>
+    <div class="progress">
+      <div id="progressFill"></div>
+    </div>
+  </section>
+
+  <!-- Drag and Drop -->
+  <section class="drag-section">
+    <h1>Drag and Drop</h1>
+    <div class="draggable" draggable="true">Drag me</div>
+    <div class="drop-zone">Drop here</div>
+  </section>
+
+  <!-- Theme Switcher -->
+  <section class="theme-section">
+    <h1>Theme Switcher</h1>
+    <button id="toggleTheme">Toggle Dark/Light Theme</button>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>

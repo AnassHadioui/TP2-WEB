@@ -1,0 +1,253 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+  }
+  
+  section {
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+  }
+  
+  button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Carousel */
+  .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .carousel .images {
+    display: flex;
+    overflow: hidden;
+    width: 200px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .carousel .images img {
+    width: 100%;
+    transition: transform 0.5s ease;
+  }
+  
+  /* Dropdown Menu */
+  .menu-container {
+    text-align: center;
+  }
+  
+  #menu-title {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  #menu-title:hover {
+    background-color: #0056b3;
+  }
+  
+  .menu {
+    list-style: none;
+    margin: 10px auto 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+  
+  .menu li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* To-Do List */
+  .todo-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .todo-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  #taskList li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #taskList li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  #taskList li button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #taskList li button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Modal */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal.hidden {
+    display: none;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Filter Table */
+  #filterInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  #productList li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #productList li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Responsive Layout */
+  #responsiveLayout {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  @media (max-width: 600px) {
+    #responsiveLayout {
+      background-color: #ffc107;
+      color: black;
+    }
+  }
+  
+  /* Progress Bar */
+  .progress {
+    width: 100%;
+    height: 20px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  
+  #progressFill {
+    width: 0;
+    height: 100%;
+    background-color: #28a745;
+    transition: width 0.5s linear;
+  }
+  
+  /* Drag and Drop */
+  .draggable {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: grab;
+    text-align: center;
+  }
+  
+  .drop-zone {
+    border: 2px dashed #6c757d;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .drop-zone.highlight {
+    background-color: #e9ecef;
+  }
+  
+  /* Theme Switch */
+  body.dark-theme {
+    background-color: #333;
+    color: white;
+  }
+  
+  body.dark-theme section {
+    background: #444;
+    color: white;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+  }
+  
